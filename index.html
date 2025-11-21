@@ -1,0 +1,94 @@
+<!-- Margarete Yomelga Zelfanya Nabur_245314103 -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internet dan aplikasi_membuat web formulir biodata</title>
+    <style>
+        body {
+            font-family:sans-serif;
+            padding: 20px;
+            background-color: rgb(166, 192, 99);
+            
+        }
+        .form-container {
+            border: 1px groove#aa3a3a;
+            padding: 15px;
+            width: 400px;
+            margin: auto;
+           background-color: rgb(249, 249, 249);
+           border-radius: 10px;
+           box-shadow: 2px 3px 4px rgb(147, 66, 80);
+
+        }
+        .header {
+            text-align: center;
+            font-size: 24px;     
+            margin-bottom: 20px;
+            border-bottom: 2px groove rgb(52, 79, 198);
+            padding-bottom: 30px;
+        }
+
+        .section {
+            border-top: 1px solid #2c4032;
+            padding-top: 15px;
+            margin-top: 15px;
+            
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }  
+    </style>
+</head>
+<body>
+<form>
+<div class="form-container">
+    <div class="header">🧏‍♂️ BIODATA 🧏‍♀️ </div>
+        <div class="form-group">
+            <label for="name">👤Name:</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="password">🔐Password:</label>
+            <input type="password" id="password" name="password">
+        </div>
+        <div class="form-group">
+            <label style="font-weight: bold;">💃Sex🕺:</label>
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male" style="width: auto;">M</label>
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female" style="width: auto;">F</label>
+        </div>
+
+        <div class="section">
+            <div class="form-group marital-status">
+                <label style="font-style: italic;">Marital status:</label>
+                <input type="checkbox" id="married" name="marital_status" value="married">
+                <label for="married">Married 👰‍♀️</label>
+                <input type="checkbox" id="children" name="has_children" value="children">
+                <label for="children">Children 🧍</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="form-group">
+                <label for="hobby" style="width: 100%;">Hobby:</label>
+                <textarea id="hobby" name="hobby" rows="5"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="income">Income:</label>
+            <select id="income" name="income">
+                <option value="under50k">under $50k</option>
+            </select>
+        </div>
+        
+        <button type="button">Validate</button>
+</div>
+</form>
+</body>
+</html>
